@@ -1,0 +1,241 @@
+/* This is the css for body  */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:black;
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Style for header section */
+#header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #113654;
+    /* z-index: 10; */
+ 
+} 
+/* Setting the width of the Logo-image */
+#logodiv{
+    margin-left: 15px;
+    width: 140px;
+    height: 60px;
+    
+}
+#logodiv span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+}
+.movie-name{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 900;
+    background-image: linear-gradient(to right, rgb(192, 255, 222), rgb(0, 128, 55),  rgb(255, 162, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+
+/* search-bar */
+#search-bar{
+    width: 35%;
+    height: 40px;
+    background-color: #113654;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.search-content{
+    width: 100%;
+    padding: 5px;
+    
+    top: 15px;
+}
+
+
+/* Styling the input section of the search function */
+#search-area input{
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    box-shadow:0px 2px 2px 2px #00ffff;
+    border: 2px solid black;
+    background-color: #ffffff;
+
+}
+/* style for the result */
+.results{
+    padding: 0px;
+    max-height: 600px;
+    overflow-y: scroll;
+
+}
+.results ul{
+    padding: 0px;
+    /* max-resolution:0px; */
+}
+.results ul li{
+    list-style: none;
+    padding: 5px 15px;
+    opacity: 0;
+    display: none;
+    border-radius: 3px;
+    transition: all .5s linear;
+}
+/* css to the fav btn to neg to fav section */
+#right-section{
+    display: flex;
+    margin: 0px 20px;
+}
+#right-section button{
+    height:50px;
+    width: 150px;
+    /* background-color: #008080; */
+    border-radius: 10px;
+    color: #a84545;
+    background: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+
+#my-list a{
+    text-decoration: none;
+    color: #00ffff;
+}
+#my-list a:hover{
+    color: #ff0000;
+}
+/* all movies will be showing here */
+#movie-container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.movie-element{
+    margin: 20px;
+}
+.movie-poster{
+    height: 350px;
+    width: 250px;
+}
+.movie-element:hover{
+    transform: scale(1.1);
+}
+.movie-poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all .2s ease-in;
+}
+/* name of the movie  */
+.movie-title{
+    max-width: 240px;
+    margin: 4px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.movie-element-tags{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* movie rating  */
+.movie-rating, .add-movie-to-list{
+    font-size: 1.4rem;
+}
+.movie-rating i{
+    color: gold;
+}
+.add-movie-to-list{
+    color: #f11692;
+}
+.add-movie-to-list:hover{
+    color: red;
+}
+/* prev and next button  */
+.page-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.page-navigation button{
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background-color: rgb(234, 33, 117);
+}
+.page-navigation button:hover{
+    transform: scale(1.1);
+}
+
+
+/* responsiveness and media queries */
+@media screen and (max-width:950px) {
+    #logo{
+        width: 200px;
+        height: auto;
+    }
+}
+/* when the screen size is 700 and less  */
+@media screen and (max-width:700px) {
+    #header{
+        flex-direction: column;
+    }
+    #page-heading{
+        padding-top: 140px;
+    }
+    #right-section{
+        margin: 10px;
+       
+    }
+    #search-bar{
+        margin: 10px;
+    }
+    #back-to-home{
+        top: 15px;
+        left: 15px;
+        margin: 0;
+    }
+}
+@media screen and (max-width:700px) {
+    #page-heading{
+        font-size: 4rem;
+    }
+}
+/* when the screen size is 550 and less  */
+@media screen and (max-width:550px) {
+    #page-heading{
+        font-size: 4.5rem;
+        padding-top: 140px;
+    }
+    .page-navigation{
+        flex-direction: column;
+    }
+}
+/* when the screen size is 380 and less  */
+@media screen and (max-width:380px) {
+    #page-heading{
+        padding-top: 150px;
+    }
+}

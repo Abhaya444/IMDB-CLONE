@@ -1,0 +1,222 @@
+/* css for the body  */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #8a2be2;
+}
+
+
+/* back button  */
+#return-to-home{
+    top: 30px;
+    left: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: red;
+}
+#return-to-home:hover{
+    color: blue;
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+}
+/* css for the main div  */
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* display movie details */
+#movie-display{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+}
+.each-movie-page{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+.movie-poster{
+    margin: 0px 20px;
+    height: 90%;
+}
+/* movie image  */
+.movie-poster img{
+    height: 90%;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 10px 18px 18px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.movie-poster img:hover{
+    box-shadow: 0 28px 9px 0 rgba(0,0,0,0.2);
+}
+.movie-duration i{
+    color: lightblue;
+}
+.movie-details > *{
+    margin: 20px 50px;
+    font-size: 1.7rem;
+    color: #8a2be2;
+}
+/* movie name */
+.title{
+    margin-right: -45px;
+    color: rgb(233, 40, 98);
+    
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.release_date, .movie-duration{
+    padding-right: 30px;
+}
+/* youtube video div  */
+.trailer-div{
+    transition: all .2s ease;
+}
+.trailer-div i{
+    color: red;
+}
+#trailer-video-div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 10px;
+    text-align: end;
+    border-radius: 20px;
+    background-color: rgb(233, 119, 119);
+}
+#trailer-video-div button{
+    cursor: pointer;
+    font-size: 2rem;
+    color: red;
+    background: none;
+    border: none;
+}
+
+/* details of the movie */
+.plot{
+    color: bisque;
+}
+
+
+/* responsiveness and media queries */
+@media screen and (max-width: 1620px) {
+    #movie-display{
+        width: 90vw;
+    }
+}
+/* when the screen size is 1200 and less  */
+@media screen and (max-width: 1200px) {
+    #movie-display{
+        width: 95vw;
+    }
+}
+/* when the screen size is 1000 and less  */
+@media screen and (max-width: 1000px) {
+    .movie-poster{
+        height: 85%;
+    }
+}
+/* when the screen size is 900 and less  */
+@media screen and (max-width: 900px) {
+    #movie-display{
+        margin: auto;
+    }
+    .each-movie-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .movie-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .plot{
+        text-align: justify;
+    }
+    .movie-poster{
+        height: 80%;
+    }
+    .title{
+        text-align: center;
+    }
+}
+/* when the screen size is 600 and less  */
+@media screen and (max-width: 600px) {
+    .movie-details > *{
+        font-size: 1.2rem;
+        margin: 15px 10px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .movie-poster{
+        height: 65%;
+    }
+    #return-to-home{
+        top: 10px;
+        right: 10px;
+    }
+    .each-movie-page{
+        padding-top: 100px;
+    }
+    iframe{
+        width: 451.5px;
+        height: 254px;
+    }
+}
+/* when the screen size is 530 and less  */
+@media screen and (max-width: 530px) {
+
+    .movie-details > *{
+        font-size: 1.2rem;
+        margin: 12px 10px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .movie-poster{
+        height: 60%;
+    }
+    iframe{
+        width: 400px;
+        height: 225px;
+    }
+}
+/* when the screen size is 470 and less  */
+@media screen and (max-width: 470px) {
+    
+    .movie-details > *{
+        font-size: 1.2rem;
+        margin: 10px 10px;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .movie-poster{
+        height: 50%;
+    }
+    iframe{
+        width: 355.5px;
+        height: 200px;
+    }
+}
+/* when the screen size is 400 and less  */
+@media screen and (max-width: 400px) {
+    iframe{
+        width: 300px;
+        height: 168.75x;
+    }
+}

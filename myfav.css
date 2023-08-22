@@ -1,0 +1,87 @@
+/* css for the body */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #113654;
+    color: white;
+}
+/*  header of the page*/
+#heading{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 95%;
+    padding: 20px 30px ;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 20px;
+    
+}
+.my-fav-heading{
+    background-image: linear-gradient(to right, rgb(192, 255, 222), rgb(0, 128, 55),  rgb(255, 162, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* header button div css */
+#btns{
+    padding-right: 50px;
+}
+#btns button, 
+#home{
+    border: none;
+    background: none;
+    font-size: 2rem;
+}
+#btns button:hover,
+#home:hover{
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: #00ffe5;
+    transition: all 0.25s ease-in-out inherit ;
+
+}
+.fa-chevron-left{
+    color: #ff00a2;
+}
+
+/* clear all the movies */
+#clear-whole-list{
+    color: #ff0000;
+}
+/* movies element cart */
+#list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie-details{
+    margin: 20px;
+    border-radius: 20px;
+}
+/* movie image */
+#movieimg{
+    border-radius: 20px;
+    height: 420px;
+    width: 310px;
+}
+#details{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.title{
+    max-width: 200px;
+
+}
+.title a{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+/* remove icon */
+#removeicon{
+    font-size: 1.6rem;
+    color: #ff0000;
+}

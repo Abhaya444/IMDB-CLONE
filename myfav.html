@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fav Movies</title>
+
+    <!-- link for font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- link for favorites movie page style -->
+    <link rel="stylesheet" href="myfav.css">
+  </head>
+  <body>
+    <!-- this is the header part  -->
+    <div id="heading">
+      <!-- this is the back button to go to the main page  -->
+      <button id="home">
+        <a href="./index.html"><i class="fas fa-chevron-left"></i></a>
+      </button>
+      <!-- title of the website  -->
+      <span class="my-fav-heading">My Favourite List</span>
+      <!-- button to clear all the fav movies -->
+      <div id="btns">
+        <button id="clear-whole-list">Clear All</button>
+      </div>
+    </div>
+    <!-- all the movies will be displayed here  -->
+    <div id="list-container"></div>
+    <!-- the javascript for the favourite page is linked here  -->
+    <script src="myfav.js"></script>
+  </body>
+</html>

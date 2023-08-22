@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- website title  -->
+    <title>IMDb</title>
+    <!-- favicon -->
+    <link rel="stylesheet" href="Assets\IMDB_Logo.png">
+    <!-- fontawesome icon link -->
+    <script src="https://kit.fontawesome.com/6f38b70ccc.js" crossorigin="anonymous"></script>
+    <!-- style css link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="movie-assets\favicon.jpg" type="image/x-icon" >
+</head>
+<!-- body begains  -->
+<body>
+    <!-- this is the main div of the website -->
+    <div id="main">
+        <!-- this is the header part  -->
+        <div id="header">
+            <!-- this is the website IMDb logo which is in the form of image  -->
+            <div id="logodiv">
+                <span class="movie-name">Movie</span>
+                <span class="movie-name">Box</span>
+            </div>
+
+            <!-- this is the search section  -->
+            <div id="search-bar">
+                <div class="search-content">
+                    <div id="search-area">
+                        <!-- this is the input area for searching the movie  -->
+                        <input type="text" name="searchMovie" id="searchMovie" placeholder="Search Movies">
+                    </div>
+                    <!-- here the results will be displayed  -->
+                    <!-- <div class="results">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+            <!-- this is the header right section were the fav movies are displayed  -->
+            <div id="right-section">
+                <button id="my-list">
+                    <!-- link to go fav section  -->
+                    <a href="./myfav.html">My Fav❤️</a>
+                </button>
+            </div>
+        </div>
+        <!-- this is the movie container here all the movies are displayed  -->
+        <div id="movie-container">
+            <div class="movie-element"></div>
+        </div>
+    </div>
+
+    <!-- this is the next and prev btn to go to next page  -->
+    <div class="page-navigation">
+        <button id="prev-page">Prev</button>
+        <button id="next-page">Next</button>
+    </div>
+    <!-- footer section end here -->
+    <!-- the javascript for the main page is linked here  -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
