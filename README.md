@@ -25,3 +25,6 @@ handleFavBtn
 addToFavDOM
 deleteMovie
 notify
+
+GITHUB host link
+ https://abhaya444.github.io/IMDB-CLONE/
